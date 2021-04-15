@@ -15,7 +15,14 @@
       </nav>
     </header>
     <main>
-      <img src="./src/images/portrait.png" alt="" />
+      <picture>
+        <source
+          media="(max-width: 599px)"
+          srcset="src/images/portrait_mobile.jpg"
+        />
+        <source media="(min-width: 600px)" srcset="src/images/portrait.jpg" />
+        <img src="src/images/portrait.jpg" alt="" />
+      </picture>
 
       <section class="double-list">
         <h2>Skills</h2>
@@ -39,22 +46,29 @@
 
       <address id="contact">
         <h2>Contact</h2>
-        <p>
-          Morten Möller<br />
-          0176 20731766<br />
-          mail@mortenm.de
-        </p>
+        Morten Möller<br />
+        <a href="tel:+4917620731766">0176 02 731 766</a><br />
+        <a href="mailto:mail@mortenm.de">mail@mortenm.de</a>
       </address>
 
       <section class="social-media">
-        <a href="https://github.com/Morten-Moeller"
-          ><img src="./src/images/Octocat.png" alt="find me on Github"
+        <a
+          href="https://github.com/Morten-Moeller"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><img src="src/images/Octocat.png" alt="find me on Github"
         /></a>
-        <a href="https://codepen.io/Fresnel"
-          ><img src="./src/images/codepen.png" alt="find me on Codepen"
+        <a
+          href="https://codepen.io/Fresnel"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><img src="src/images/codepen.png" alt="find me on Codepen"
         /></a>
-        <a href="https://www.linkedin.com/in/morten-m%C3%B6ller-0461891b8/"
-          ><img src="./src/images/LI-Logo.png" alt="find me on LinkedIn"
+        <a
+          href="https://www.linkedin.com/in/morten-m%C3%B6ller-0461891b8/"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><img src="src/images/LI-Logo.png" alt="find me on LinkedIn"
         /></a>
       </section>
 
