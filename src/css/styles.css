@@ -2,9 +2,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #006070;
+}
+
+html {
+  width: 100%;
+}
+
 body {
+  color: var(--primary);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 20px;
 }
 
 input,
@@ -13,7 +29,37 @@ textarea {
   font-size: inherit;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: #553412;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+address {
+  margin-bottom: 20px;
+}
+
 .double-list {
   display: flex;
   justify-content: space-evenly;
+}
+
+.button {
+  background: var(--primary);
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 2px 3px 5px #808080;
 }
