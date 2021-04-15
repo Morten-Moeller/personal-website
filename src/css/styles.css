@@ -12,6 +12,12 @@ html {
   background: #f0e7e4;
 }
 
+input,
+button,
+textarea {
+  font-size: inherit;
+}
+
 body {
   color: var(--primary);
   font-family: Arial, Helvetica, sans-serif;
@@ -26,12 +32,6 @@ a {
 }
 nav {
   margin-bottom: 20px;
-}
-
-input,
-button,
-textarea {
-  font-size: inherit;
 }
 
 ul {
@@ -53,7 +53,16 @@ address {
 }
 
 footer {
-  margin-top: 50px;
+  margin: 50px 0 20px 0;
+}
+
+dt {
+  text-decoration: underline;
+  line-height: 2;
+}
+
+dd {
+  margin-left: 0;
 }
 
 .double-list {
