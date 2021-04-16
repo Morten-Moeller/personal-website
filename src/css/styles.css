@@ -65,6 +65,10 @@ dd {
   margin-left: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 .double-list {
   display: flex;
   justify-content: space-evenly;
