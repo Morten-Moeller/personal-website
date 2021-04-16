@@ -22,8 +22,8 @@
     <header>
       <h1 id="start">Morten Möller</h1>
       <nav>
-        <a href="#contact" class="button">Contact</a>
-        <a href="#bio" class="button">Biografie</a>
+        <a href="#contact" class="nav-element">Contact</a>
+        <a href="#bio" class="nav-element">Biografie</a>
       </nav>
     </header>
     <main>
@@ -39,9 +39,9 @@
       <section class="double-list">
         <div>
           <h2>Skills</h2>
-          <ul lang="en">
-            <li>HTML</li>
-            <li>CSS</li>
+          <ul>
+            <li aria-label="HTML">HTML</li>
+            <li aria-label="CSS">CSS</li>
             <li>JavaScript</li>
             <li>Photoshop</li>
             <li>InDesign</li>
@@ -63,8 +63,12 @@
       <address id="contact">
         <h2>Contact</h2>
         Morten Möller<br />
-        <a href="tel:+4917620731766">0176 20 731 766</a><br />
-        <a href="mailto:mail@mortenm.de">mail@mortenm.de</a>
+        <a aria-label="phone 017620731766" href="tel:+4917620731766"
+          >0176 20 731 766</a
+        ><br />
+        <a aria-label="email mail@mortenm.de" href="mailto:mail@mortenm.de"
+          >mail@mortenm.de</a
+        >
       </address>
 
       <section class="social-media">
