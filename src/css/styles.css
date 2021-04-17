@@ -43,7 +43,7 @@ body {
 header {
   background: var(--secondary-bg);
   width: 100vw;
-  max-width: 720px;
+  max-width: 820px;
   height: 120px;
   border-bottom-left-radius: 80px 50%;
   border-bottom-right-radius: 80px 50%;
@@ -52,14 +52,13 @@ header {
 main {
   width: 90vw;
   row-gap: 20px;
-  max-width: 520px;
+  max-width: 620px;
 }
 
 @media (min-width: 700px) {
   main {
-    align-items: start;
     column-gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 300px;
   }
 }
 
@@ -124,11 +123,10 @@ nav {
     display: flex;
     height: auto;
     justify-content: center;
-    flex-direction: row;
   }
 
   .flex img {
-    height: 46px;
+    height: 50px;
     width: auto;
     padding: 0 7px;
   }
@@ -203,6 +201,14 @@ nav {
   }
 
   .max-w-520 {
-    max-width: 520px;
+    max-width: 620px;
+  }
+
+  .flex-d-row {
+    flex-direction: row;
+  }
+
+  .alig-items-start {
+    align-items: start;
   }
 }
