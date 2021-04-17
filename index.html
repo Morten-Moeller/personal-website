@@ -5,43 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Personal website from Morten Möller</title>
-    <link
-      href="src/css/styles2.css"
-      rel="stylesheet"
-      type="text/css"
-      title="with grid"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="src/css/styles.css"
-      type="text/css"
-      title="without grid"
-    />
+    <link href="src/css/styles.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <header>
-      <h1 id="start">Morten Möller</h1>
+  <body class="d-flex flex-d-column m-0">
+    <header class="d-grid p-items-center">
+      <h1 id="start" class="m-0">Morten Möller</h1>
       <nav>
-        <a href="#contact" class="nav-element">Contact</a>
+        <a href="#contact" class="nav-element m-10">Contact</a>
         <a href="#bio" class="nav-element">Biografie</a>
       </nav>
     </header>
-    <main>
-      <picture>
+    <main class="d-grid m-10-0 p-items-center">
+      <picture class="m-10-0 column-full">
         <source
           media="(max-width: 599px)"
           srcset="src/images/portrait_mobile.jpg"
         />
         <source media="(min-width: 600px)" srcset="src/images/portrait.jpg" />
-        <img src="src/images/portrait.jpg" alt="" />
+        <img src="src/images/portrait.jpg" alt="" width="780" height="520" />
       </picture>
 
-      <section class="double-list">
+      <section class="d-flex">
         <div>
           <h2>Skills</h2>
           <ul>
-            <li aria-label="HTML">HTML</li>
-            <li aria-label="CSS">CSS</li>
+            <li>HTML</li>
+            <li>CSS</li>
             <li>JavaScript</li>
             <li>Photoshop</li>
             <li>InDesign</li>
@@ -71,34 +60,50 @@
         >
       </address>
 
-      <section class="social-media">
+      <section
+        class="social-media max-w-400 d-grid column-full max-w-520 p-items-center"
+      >
         <h2>Social Media</h2>
 
-        <div class="flex">
+        <div class="d-flex flex flex-d-column">
           <a
             href="https://github.com/Morten-Moeller"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="src/images/Octocat.png" alt="find me on Github"
-          /></a>
+          >
+            <img
+              src="src/images/Octocat.png"
+              alt="find me on Github"
+              height="665"
+              width="800 "
+            />
+          </a>
           <a
             href="https://codepen.io/Fresnel"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="src/images/codepen.png" alt="find me on Codepen"
+            ><img
+              src="src/images/codepen.png"
+              alt="find me on Codepen"
+              height="260"
+              width="1380"
           /></a>
           <a
             href="https://www.linkedin.com/in/morten-m%C3%B6ller-0461891b8/"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="src/images/LI-Logo.png" alt="find me on LinkedIn"
+            ><img
+              src="src/images/LI-Logo.png"
+              alt="find me on LinkedIn"
+              height="520"
+              width="2212"
           /></a>
         </div>
       </section>
 
       <section id="bio">
         <h2>Biografie</h2>
-        <p>
+        <p class="max-w-400">
           I was born in 1985 in Lübeck, Germany. I got my Abitur in 2006 and
           after one semester of media informatics at the University of Lübeck I
           moved to Munich. There I completed my Bachelor of Arts in Design at
@@ -110,19 +115,19 @@
 
       <section>
         <h2>CV</h2>
-        <dl>
-          <dt>2011</dt>
-          <dd>
+        <dl class="max-w-400">
+          <dt class="m-0">2011</dt>
+          <dd class="m-0">
             Bachelor of Arts in Design University of Applied Sciences Munich
           </dd>
-          <dt>since 2011</dt>
-          <dd>freelance Photodesigner</dd>
-          <dt>2020</dt>
-          <dd>started with Web-development</dd>
+          <dt class="m-0">since 2011</dt>
+          <dd class="m-0">freelance Photodesigner</dd>
+          <dt class="m-0">2020</dt>
+          <dd class="m-0">started with Web-development</dd>
         </dl>
       </section>
 
-      <footer>
+      <footer class="column-full">
         <a href="#start" class="button">Get back to the top!</a>
       </footer>
     </main>
