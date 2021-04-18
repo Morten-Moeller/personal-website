@@ -74,11 +74,6 @@ a {
   color: var(--tertier-text);
 }
 
-h2,
-address {
-  text-align: center;
-}
-
 p {
   text-align: justify;
 }
@@ -87,16 +82,6 @@ p {
   p {
     text-align: left;
   }
-}
-
-dt {
-  line-height: 2;
-  text-decoration: underline;
-}
-
-dt,
-dd {
-  text-align: center;
 }
 
 img {
@@ -151,12 +136,15 @@ nav {
 .nav-element {
   color: var(--secondary-text);
   font-size: 1.25rem;
+  border-radius: 7px;
 }
 
 @media (any-hover: hover) {
   .nav-element:hover {
-    color: indianred;
-    transition: color 0.5s ease;
+    background: indianred;
+    transition: background 1.5s ease;
+    padding: 5px 10px;
+    transition: padding 1.5s ease;
   }
 }
 .d-grid {
@@ -193,6 +181,18 @@ nav {
 
 .p-items-center {
   place-items: center;
+}
+
+.text-a-center {
+  text-align: center;
+}
+
+.line-h2 {
+  line-height: 2;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 @media (min-width: 700px) {
