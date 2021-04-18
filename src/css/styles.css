@@ -114,12 +114,30 @@ ul {
   border-radius: 7px;
 }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(7deg);
+  }
+  15% {
+    transform: rotate(-7deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+}
+
 @media (any-hover: hover) {
   .nav-element:hover {
     background: indianred;
     transition: background 1.5s ease;
     padding: 5px 10px;
     transition: padding 1.5s ease;
+  }
+  .wiggle:hover {
+    animation: wiggle 2.5s;
   }
 }
 .d-grid {
