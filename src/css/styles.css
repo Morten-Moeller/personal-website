@@ -143,6 +143,9 @@ ul {
     animation: wiggle 2.5s;
   }
 }
+
+/* === utility classes === */
+
 .d-grid {
   display: grid;
 }
