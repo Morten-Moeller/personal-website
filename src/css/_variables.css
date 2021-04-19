@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #dfe7f7;
+    --secondary-text: #333;
+    --tertier-text: #cba549;
+    --primary-bg: #333;
+    --secondary-bg: #cba549;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-text: #333;
+    --secondary-text: #cba549;
+    --tertier-text: #cba549;
+    --primary-bg: #f4f7ff;
+    --secondary-bg: #333;
+  }
+}
