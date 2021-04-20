@@ -7,76 +7,91 @@
     <title>Personal website from Morten Möller</title>
     <link
       class="text-a-center"
-      nk
       href="src/css/styles.css"
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="icon" href="src/images/favicon.png" type="image/png">
+    <link rel="icon" href="src/images/favicon.png" type="image/png" />
   </head>
-  <body class="d-flex flex-d-column m-0 a-items-center">
-    <header class="d-grid p-items-center">
-      <h1 id="start" class="m-0">Morten Möller</h1>
+  <body
+    class="bg-color-primary width-100 d-flex flex-d-column m-0 a-items-center color-primary"
+  >
+    <header class="d-grid p-items-center bg-color-secondary header m-0">
+      <h1 id="start" class="m-0 color-secondary">Morten Möller</h1>
       <nav class="a-self-fstart">
-        <a href="#contact" class="nav-element m-10">Contact</a>
-        <a href="#bio" class="nav-element">Biografie</a>
+        <a href="#contact" class="nav-element m-10 color-secondary">Contact</a>
+        <a href="#bio" class="nav-element m-10 color-secondary">Biografie</a>
       </nav>
     </header>
-    <main class="d-grid m-10-0 p-items-center alig-items-start">
+    <main class="d-grid m-10-0 p-items-center alig-items-start main">
       <picture class="m-10-0 column-full">
         <source
           media="(max-width: 599px)"
           srcset="src/images/portrait_mobile.jpg"
         />
         <source media="(min-width: 600px)" srcset="src/images/portrait.jpg" />
-        <img class="borderradius-15" src="src/images/portrait.jpg" alt="" width="780" height="520" />
+        <img
+          class="borderradius-15 img-full-width"
+          src="src/images/portrait.jpg"
+          alt=""
+          width="780"
+          height="520"
+        />
       </picture>
 
       <section class="d-flex">
         <div>
-          <h2 class="text-a-center">Skills</h2>
-          <ul>
-            <li class="text-a-center line-h2"">HTML</li>
-            <li class="text-a-center line-h2"">CSS</li>
-            <li class="text-a-center line-h2"">JavaScript</li>
-            <li class="text-a-center line-h2"">Photoshop</li>
-            <li class="text-a-center line-h2"">InDesign</li>
+          <h2 class="text-a-center color-tertier">Skills</h2>
+          <ul class="p-0 generic-list">
+            <li class="text-a-center line-h2">HTML</li>
+            <li class="text-a-center line-h2">CSS</li>
+            <li class="text-a-center line-h2">JavaScript</li>
+            <li class="text-a-center line-h2">Photoshop</li>
+            <li class="text-a-center line-h2">InDesign</li>
           </ul>
         </div>
 
         <div>
-          <h2 class="text-a-center">Interests</h2>
-          <ul>
-            <li class="text-a-center line-h2"">Net policy</li>
-            <li class="text-a-center line-h2"">Gaming</li>
-            <li class="text-a-center line-h2"">Photography</li>
-            <li class="text-a-center line-h2"">Gardening</li>
-            <li class="text-a-center line-h2"">Cooking</li>
+          <h2 class="text-a-center color-tertier">Interests</h2>
+          <ul class="p-0 generic-list">
+            <li class="text-a-center line-h2">Net policy</li>
+            <li class="text-a-center line-h2">Gaming</li>
+            <li class="text-a-center line-h2">Photography</li>
+            <li class="text-a-center line-h2">Gardening</li>
+            <li class="text-a-center line-h2">Cooking</li>
           </ul>
         </div>
       </section>
 
       <address id="contact" class="line-h2 text-a-center">
-        <h2 class="text-a-center">Contact</h2>
+        <h2 class="text-a-center color-tertier">Contact</h2>
         Morten Möller<br />
-        <a aria-label="phone 017620731766" href="tel:+4917620731766"
+        <a
+          class="color-tertier"
+          aria-label="phone 017620731766"
+          href="tel:+4917620731766"
           >0176 20 731 766</a
         ><br />
-        <a aria-label="email mail@mortenm.de" href="mailto:mail@mortenm.de"
+        <a
+          class="color-tertier"
+          aria-label="email mail@mortenm.de"
+          href="mailto:mail@mortenm.de"
           >mail@mortenm.de</a
         >
       </address>
 
-      <section class="max-w-400 d-grid column-full max-w-520 p-items-center">
-        <h2 class="text-a-center">Social Media</h2>
+      <section class="max-w-400 d-grid column-full max-w-520 c-gap-20">
+        <h2 class="text-a-center color-tertier">Social Media</h2>
 
-        <div class="d-flex flex flex-d-column flex-d-row">
-          <a 
+        <div class="justify-center d-flex flex-d-column flex-d-row w-620px">
+          <a
+            class="d-flex justify-center"
             href="https://github.com/Morten-Moeller"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img class="p-10-0 wiggle"
+            <img
+              class="p-10-0 wiggle img-full-width height-70px"
               src="src/images/Octocat.png"
               alt="find me on Github"
               height="665"
@@ -84,20 +99,24 @@
             />
           </a>
           <a
+            class="d-flex justify-center"
             href="https://codepen.io/Fresnel"
             rel="noopener noreferrer"
             target="_blank"
-            ><img class="p-10-0 wiggle"
+            ><img
+              class="p-10-0 wiggle img-full-width height-70px"
               src="src/images/codepen.png"
               alt="find me on Codepen"
               height="260"
               width="1380"
           /></a>
           <a
+            class="d-flex justify-center"
             href="https://www.linkedin.com/in/morten-m%C3%B6ller-0461891b8/"
             rel="noopener noreferrer"
             target="_blank"
-            ><img class="p-10-0 wiggle"
+            ><img
+              class="p-10-0 wiggle img-full-width height-70px"
               src="src/images/LI-Logo.png"
               alt="find me on LinkedIn"
               height="520"
@@ -107,7 +126,7 @@
       </section>
 
       <section id="bio">
-        <h2 class="text-a-center">Biografie</h2>
+        <h2 class="text-a-center color-tertier">Biografie</h2>
         <p class="max-w-400 text-a-justify text-a-left">
           I was born in 1985 in Lübeck, Germany. I got my Abitur in 2006 and
           after one semester of media informatics at the University of Lübeck I
@@ -119,7 +138,7 @@
       </section>
 
       <section>
-        <h2 class="text-a-center">CV</h2>
+        <h2 class="text-a-center color-tertier">CV</h2>
         <dl class="max-w-400">
           <dt class="m-0 text-a-center line-h2 bold">2011</dt>
           <dd class="m-10-0 text-a-center">
@@ -132,8 +151,10 @@
         </dl>
       </section>
 
-      <footer class="column-full m-10-0">
-        <a href="#start" class="button">Get back to the top!</a>
+      <footer class="column-full m-10-0 color-secondary">
+        <a href="#start" class="button bg-color-secondary color-secondary"
+          >Get back to the top!</a
+        >
       </footer>
     </main>
   </body>

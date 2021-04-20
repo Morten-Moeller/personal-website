@@ -1,0 +1,12 @@
+.main {
+  width: 90vw;
+  row-gap: 20px;
+  max-width: 620px;
+}
+
+@media (min-width: 700px) {
+  .main {
+    column-gap: 20px;
+    grid-template-columns: 300px 300px;
+  }
+}

@@ -1,0 +1,12 @@
+.nav-element {
+  font-size: 1.25rem;
+  border-radius: 7px;
+}
+
+@media (any-hover: hover) {
+  .nav-element:hover {
+    background: indianred;
+    padding: 5px 10px;
+    transition: all 1.5s ease;
+  }
+}

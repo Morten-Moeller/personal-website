@@ -1,0 +1,26 @@
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  5% {
+    transform: rotate(7deg);
+  }
+
+  15% {
+    transform: rotate(-7deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (any-hover: hover) {
+  .wiggle:hover {
+    -webkit-animation: wiggle 2.5s;
+    -moz-animation: wiggle 2.5s;
+    -o-animation: wiggle 2.5s;
+    animation: wiggle 2.5s;
+  }
+}
