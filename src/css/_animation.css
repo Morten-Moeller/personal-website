@@ -2,12 +2,15 @@
   0% {
     transform: rotate(0deg);
   }
+
   5% {
     transform: rotate(7deg);
   }
+
   15% {
     transform: rotate(-7deg);
   }
+
   20% {
     transform: rotate(0deg);
   }
